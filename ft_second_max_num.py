@@ -1,14 +1,28 @@
-def ft_second_max_num(a):
-    n = f.ft_len_num(a)
-    k = 0
-    mm = maxx.ft_max_num(a)
+def ft_len_num(a):
+    v = 0
     if a < 0:
         a = -a
-    for i in range(n):
-        if a % 10 == mm:
-            a //= 10
-            continue
-        if k < a % 10:
-            k = a % 10
+    while a > 0:
+        a += 1
         a //= 10
-    return k
+    return v
+
+
+def ft_second_max_num(a):
+    k = 0
+    n = 0
+    z = a
+
+    while z > 0:
+        if k < z % 10:
+            k = z % 10
+        z //= 10
+
+    while a > 0:
+        if k > a % 10 > n:
+            n = a % 10
+        a //= 10
+
+    return n
+
+
