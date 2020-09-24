@@ -13,5 +13,3 @@ def ft_mirror_num(a):
         if c == b:
             return True
         return False
-
-
