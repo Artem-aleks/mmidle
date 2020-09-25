@@ -14,3 +14,4 @@ def ft_second_simple_max_num(a):
 
     if b == d:
         return -1
+    
