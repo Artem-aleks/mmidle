@@ -22,5 +22,3 @@ def ft_rev_bin_num(a):
         v += a % 10 * ft_pow(2, digit)
         a //= 10
     return v
-
-
