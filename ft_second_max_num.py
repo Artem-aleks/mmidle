@@ -24,5 +24,3 @@ def ft_second_max_num(a):
         a //= 10
 
     return n
-
-
